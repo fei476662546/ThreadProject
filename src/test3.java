@@ -7,6 +7,6 @@ import java.util.Timer;
 public class test3 {
     public static void main(String[] args) {
         Timer timer=new Timer();
-        timer.schedule(new My);
+
     }
 }
