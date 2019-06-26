@@ -38,20 +38,3 @@ public class work1 {
 
     }
 }
- class cave implements Runnable{
-    String name;
-    cave(String name){
-        this.name=name;
-    }
-    public void run(){
-        synchronized (Cave.class) {
-            System.out.println(name + "开始进入山洞");
-            try {
-                Thread.sleep(5000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println("五秒后" + name + "出来了");
-        }
-    }
-}
